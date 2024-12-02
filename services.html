@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Buns Studio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+      }
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand {
+        color: #f8f9fa !important;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .navbar-nav .nav-link {
+        color: #f8f9fa !important;
+      }
+      .service-card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+      }
+      .service-card img {
+        width: 100%;
+        height: auto;
+      }
+      .service-card h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        margin-top: 15px;
+      }
+      .service-card p {
+        font-size: 1rem;
+      }
+      .service-card .btn {
+        background-color: #343a40;
+        color: white;
+        border: none;
+      }
+      .service-card .btn:hover {
+        background-color: #495057;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/white.png" alt="Logo" height="40"> Buns Studio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Products/Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="tests.html">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="service-card p-3 text-center">
+            <img src="images/a4.jpg" alt="A4 Portrait">
+            <h3>A4-sized Portraits</h3>
+            <p>(ONE HEAD ONLY)</p>
+            <p>Dimensions: 297mm x 210mm. Additional 150 PhP for a frame.</p>
+            <p><strong>Price:</strong> 1,000 PhP</p>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#a4FormModal">Order A4</button>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="service-card p-3 text-center">
+            <img src="images/a2.jpg" alt="A2 Portrait">
+            <h3>A2-sized Portraits</h3>
+            <p>(ONE HEAD ONLY)</p>
+            <p>Dimensions: 420mm x 594mm. Additional 1,000 PhP for a frame.</p>
+            <p><strong>Price:</strong> 5,000 PhP</p>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#a2FormModal">Order A2</button>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="service-card p-3 text-center">
+            <img src="images/a1.jpg" alt="A1 Portrait">
+            <h3>A1-sized Portraits</h3>
+            <p>(ONE HEAD ONLY)</p>
+            <p>Dimensions: 594mm x 841mm. Additional 1,000 PhP for a frame.</p>
+            <p><strong>Price:</strong> 10,000 PhP</p>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#a1FormModal">Order A1</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal fade" id="a4FormModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Request A4 Portrait</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nameA1" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="nameA1" required>
+              </div>
+              <div class="mb-3">
+                <label for="emailA1" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="emailA1" required>
+              </div>
+              <div class="mb-3">
+                <label for="detailsA1" class="form-label">Order Details</label>
+                <textarea class="form-control" id="detailsA1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="a2FormModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Request A2 Portrait</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="nameA2" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="nameA2" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailA2" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="emailA2" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="detailsA2" class="form-label">Order Details</label>
+                    <textarea class="form-control" id="detailsA2" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="modal fade" id="a1FormModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Request A1 Portrait</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nameA4" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="nameA4" required>
+              </div>
+              <div class="mb-3">
+                <label for="emailA4" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="emailA4" required>
+              </div>
+              <div class="mb-3">
+                <label for="detailsA4" class="form-label">Order Details</label>
+                <textarea class="form-control" id="detailsA4" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="mt-5">
+      <h3 class="text-center">Prices May Vary</h3>
+      <p class="text-center">I can do customize sizes; also, prices vary on how many
+        heads I am going to draw. Submit your request below!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="p-3 mb-3">
+              <label for="customName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="customName" required>
+            </div>
+            <div class="p-3 mb-3">
+              <label for="customEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="customEmail" required>
+            </div>
+            <div class="p-3 mb-3">
+              <label for="customDetails" class="form-label">Details</label>
+              <textarea class="form-control" id="customDetails" rows="4" required></textarea>
+            </div>
+            
+            <div class="p-3">
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
